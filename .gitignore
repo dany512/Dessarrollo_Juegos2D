@@ -2,7 +2,7 @@
 bin/
 bin-debug/
 bin-release/
-
+src/com
 # Other files and folders
 .settings/
 
