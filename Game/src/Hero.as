@@ -14,7 +14,7 @@ package
 			super();
 			currentClip = 'player';
 			addState("Derecha", "playerDer");
-			addState("Izquierda", "platerIzq");
+			addState("Izquierda", "playerIzq");
 			addState("Abajo", "playerDown");
 			addState("Arriba", "player");
 		}

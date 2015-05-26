@@ -1,5 +1,7 @@
 package 
 {
+	import flash.events.Event;
+	import utils.input.DKeyboard;
 	import utils.loaders.DLoadData;
 	import utils.views.DView;
 	
@@ -11,6 +13,7 @@ package
 	public class Game extends DView 
 	{
 		private var Map:Array;
+		private var hero:Hero;
 		public function Game() 
 		{
 			super();
@@ -34,6 +37,15 @@ package
 					Map[i].push(obj.map[i][j]);
 				}
 			}
+			hero = new Hero();
+			addChild(hero);
+			stage.addEventListener(Event.ENTER_FRAME, loop);
+			DKeyboard.init(stage);
+		}
+		
+		private function loop(e:Event):void 
+		{
+			
 		}
 		
 	}
