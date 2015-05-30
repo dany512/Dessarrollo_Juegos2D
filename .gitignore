@@ -1,6 +1,7 @@
 # Build and Release Folders
-bin/
+bin/exe/
 bin-debug/
+bin-release/
 # Other files and folders
 .settings/
 
